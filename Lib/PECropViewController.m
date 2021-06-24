@@ -7,11 +7,10 @@
 //
 
 #import "PECropViewController.h"
-#import "PECropView.h"
+
 
 @interface PECropViewController () <UIActionSheetDelegate>
 
-@property (nonatomic) PECropView *cropView;
 @property (nonatomic) UIActionSheet *actionSheet;
 
 - (void)commonInit;

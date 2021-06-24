@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PECropView.h"
 
 @protocol PECropViewControllerDelegate;
 
@@ -14,6 +15,8 @@
 
 @property (nonatomic, weak) id<PECropViewControllerDelegate> delegate;
 @property (nonatomic) UIImage *image;
+
+@property (nonatomic) PECropView *cropView;
 
 @property (nonatomic) BOOL keepingCropAspectRatio;
 @property (nonatomic) CGFloat cropAspectRatio;
