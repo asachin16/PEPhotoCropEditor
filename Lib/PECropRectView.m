@@ -159,7 +159,7 @@
     if (self.keepingAspectRatio) {
         CGFloat width = CGRectGetWidth(self.bounds);
         CGFloat height = CGRectGetHeight(self.bounds);
-        self.fixedAspectRatio = fminf(width / height, height / width);
+        self.fixedAspectRatio = = width == 0 && height == 0 ? 1.0 : fminf(width / height, height / width);
     }
 }
 
